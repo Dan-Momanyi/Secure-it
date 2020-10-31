@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 //setting up the sessions
 app.use(session({
-    secret: 'Our little secret',
+    secret: process.env.PEWPEW,
     resave: false,
     saveUninitialized: false
 }));
